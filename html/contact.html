@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Stackly Remote Collaboration Platform</title>
+<script>
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+  window.scrollTo(0, 0);
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/contact.css">
+</head>
+<body class="contact-page">
+
+<div id="scrollBar" aria-hidden="true"></div>
+
+<header id="site-header">
+  <div class="wrap nav-inner">
+    <a href="../index.html" class="logo"><img src="../assets/stackly_logo.webp" alt="Stackly logo" class="logo-img"></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="../index.html" class="nav-logo"><img src="../assets/stackly_logo.webp" alt="Stackly logo" class="logo-img nav-logo-img"></a>
+      <button class="nav-close" id="navClose" aria-label="Close menu">&times;</button>
+      <a href="../index.html">Home</a>
+      <a href="./about.html">About</a>
+      <a href="./service.html">Services</a>
+      <a href="./blog.html">Blog</a>
+      <a href="./contact.html" class="active">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="./login.html" class="btn btn-outline magnetic">Login</a>
+      <a href="./signup.html" class="btn btn-solid magnetic">Signup</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">&#9776;</button>
+    </div>
+  </div>
+</header>
+
+<!-- 1. HERO -->
+<section class="page-hero dark" id="top">
+  <div class="hero-bg" aria-hidden="true"><span class="orb o1"></span><span class="orb o2"></span><span class="orb o3"></span></div>
+  <div class="wrap page-hero-inner">
+    <div class="ph-text">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a><span>/</span><b>Contact</b></nav>
+      <h1 class="ph-title split">We would love to hear from you</h1>
+      <p class="ph-lead">Questions about plans, a demo for your team or help with your workspace? Our human support team is here around the clock and replies within a few hours.</p>
+      <div class="btn-row">
+        <a href="#message" class="btn btn-cream magnetic">Send a message</a>
+        <a href="#visit" class="btn btn-outline magnetic">Find our office</a>
+      </div>
+    </div>
+    <div class="ph-visual">
+      <div class="hero-card js-flip"><img src="../assets/q37.webp" alt="Support team smiling around a table"></div>
+      <div class="float-chip fc1"><b>&#9889;</b> Replies in ~2 hrs</div>
+      <div class="float-chip fc2"><b>&#127911;</b> 24/7 human support</div>
+      <div class="float-chip fc3"><b>&#127760;</b> Teams in 40+ countries</div>
+      <div class="est-badge" aria-hidden="true"><small>Support</small><b>24/7</b></div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<section class="marquee-band" aria-label="How we can help">
+  <div class="marquee-track">
+    <div class="marquee-group"><span>Sales enquiries</span><span>Product demos</span><span>Technical support</span><span>Billing help</span><span>Partnerships</span><span>Press</span><span>Careers</span><span>Feedback</span></div>
+    <div class="marquee-group" aria-hidden="true"><span>Sales enquiries</span><span>Product demos</span><span>Technical support</span><span>Billing help</span><span>Partnerships</span><span>Press</span><span>Careers</span><span>Feedback</span></div>
+  </div>
+</section>
+
+<!-- 2. CONTACT CARDS (flip) -->
+<section class="sec light" id="reach">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow js-reveal">Get in touch</span><h2 class="split">Four easy ways to reach us</h2><p class="desc js-reveal">Hover or tap a card to see the details.</p></div>
+    <div class="cc-grid">
+      <div class="ccard" tabindex="0"><div class="ccard-in">
+        <div class="cface front"><img loading="lazy" decoding="async" src="../assets/q40.webp" alt="Person talking on the phone"><div class="cmeta"><span class="cico">&#128222;</span><h3>Call us</h3><span class="s">Mon&ndash;Fri, 9am&ndash;6pm IST</span></div></div>
+        <div class="cface back"><h3>Talk to a human</h3><p>Speak directly with our sales and support team.</p><a class="cl" href="tel:+919876543210">+91 98765 43210</a></div>
+      </div></div>
+      <div class="ccard" tabindex="0"><div class="ccard-in">
+        <div class="cface front"><img loading="lazy" decoding="async" src="../assets/q41.webp" alt="Laptop showing an email inbox"><div class="cmeta"><span class="cico">&#9993;&#65039;</span><h3>Email us</h3><span class="s">Replies within a few hours</span></div></div>
+        <div class="cface back"><h3>Write to us</h3><p>Send details and screenshots and we will get right back to you.</p><a class="cl" href="mailto:hello@stackly.ai">hello@stackly.ai</a></div>
+      </div></div>
+      <div class="ccard" tabindex="0"><div class="ccard-in">
+        <div class="cface front"><img loading="lazy" decoding="async" src="../assets/q42.webp" alt="Modern office interior"><div class="cmeta"><span class="cico">&#128205;</span><h3>Visit us</h3><span class="s">Drop in for a coffee</span></div></div>
+        <div class="cface back"><h3>Our office</h3><p>MMR Complex, Periyakollappatty, Chinna Thirupathi, Tamil Nadu 636008</p><a class="cl" href="#visit">View on map</a></div>
+      </div></div>
+      <div class="ccard" tabindex="0"><div class="ccard-in">
+        <div class="cface front"><img loading="lazy" decoding="async" src="../assets/q43.webp" alt="Team holding a video demo"><div class="cmeta"><span class="cico">&#127909;</span><h3>Book a demo</h3><span class="s">20-minute walkthrough</span></div></div>
+        <div class="cface back"><h3>See Stackly live</h3><p>Pick a time and we will tailor the demo to your team.</p><a class="cl" href="#message">Request a demo</a></div>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. FORM -->
+<section class="sec dark" id="message">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow js-reveal">Send a message</span><h2 class="split">Tell us how we can help</h2><p class="desc js-reveal">Fill in the form and a member of our team will reply within one working day.</p></div>
+    <div class="form-grid">
+      <div class="form-card js-reveal">
+        <form id="contactForm" novalidate autocomplete="on">
+          <div id="formFields">
+            <h3>Contact form</h3>
+            <p>Fields marked with <span style="color:#ff8a80">*</span> are required.</p>
+            <div class="row2">
+              <div class="field"><label for="name">Full name <sup>*</sup></label><input type="text" id="name" name="name" placeholder="Your full name" autocomplete="name" maxlength="60"><span class="err" id="e-name" role="alert"></span></div>
+              <div class="field"><label for="email">Email address <sup>*</sup></label><input type="email" id="email" name="email" placeholder="you@company.com" autocomplete="email" maxlength="80"><span class="err" id="e-email" role="alert"></span></div>
+            </div>
+            <div class="row2">
+              <div class="field"><label for="phone">Phone number <sup>*</sup></label><input type="tel" id="phone" name="phone" placeholder="10-digit mobile number" inputmode="numeric" autocomplete="tel-national" maxlength="10"><span class="err" id="e-phone" role="alert"></span></div>
+              <div class="field"><label for="company">Company <small style="opacity:.6">(optional)</small></label><input type="text" id="company" name="company" placeholder="Company name" autocomplete="organization" maxlength="60"><span class="err" id="e-company" role="alert"></span></div>
+            </div>
+            <div class="field"><label for="subject">Subject <sup>*</sup></label>
+              <select id="subject" name="subject"><option value="">Select a topic</option><option>Sales enquiry</option><option>Book a demo</option><option>Technical support</option><option>Billing question</option><option>Partnership</option><option>Other</option></select>
+              <span class="err" id="e-subject" role="alert"></span></div>
+            <div class="field"><label for="message-box">Message <sup>*</sup></label><textarea id="message-box" name="message" placeholder="Tell us a little about your team and what you need (min 20 characters)" maxlength="500"></textarea><div class="count"><span id="cnt">0</span>/500</div><span class="err" id="e-message" role="alert"></span></div>
+            <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <div class="field check-f"><label class="check" for="consent"><input type="checkbox" id="consent" name="consent"><span>I agree to the Privacy Policy and to being contacted by Stackly about my enquiry. <sup style="color:#ff8a80">*</sup></span></label><span class="err" id="e-consent" role="alert"></span></div>
+            <button type="submit" class="btn btn-cream magnetic" id="sendBtn">Send message</button>
+          </div>
+          <div class="form-ok" id="formOk" role="status" aria-live="polite"><div class="tick">&#10003;</div><h3>Message sent!</h3><p>Thank you, <b id="okName"></b>. We will reply to your email within one working day.</p><button type="button" class="btn btn-outline magnetic" id="againBtn" style="margin-top:22px">Send another message</button></div>
+        </form>
+      </div>
+      <div class="form-side js-flip"><img loading="lazy" decoding="async" src="../assets/q44.webp" alt="Customer success team on a call"><div class="fs-txt"><h3>Real people, real answers</h3><p>No bots, no ticket black holes. Every message is read and answered by someone on our team.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. MAP -->
+<section class="sec light" id="visit">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow js-reveal">Find us</span><h2 class="split">Visit our office</h2><p class="desc js-reveal">Prefer to talk in person? Our doors are open on weekdays.</p></div>
+    <div class="map-grid">
+      <div class="map-frame"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.1616097152896!2d78.1739798!3d11.682956599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babefef7fd970bb%3A0xe11aef1a71994f9!2sStackly!5e0!3m2!1sen!2sin!4v1791533159916!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="Stackly office location on Google Maps"></iframe><div class="map-shield" id="mapShield" role="button" tabindex="0" aria-label="Click to interact with the map"><span>&#128070; Click to explore the map</span></div></div>
+      <div class="visit js-reveal">
+        <h3>Stackly HQ</h3>
+        <div class="vi"><i>&#128205;</i><div><b>Address</b>MMR Complex, Periyakollappatty, Chinna Thirupathi, Tamil Nadu 636008</div></div>
+        <div class="vi"><i>&#128337;</i><div><b>Hours</b>Mon&ndash;Fri &middot; 9am &ndash; 6pm IST</div></div>
+        <div class="vi"><i>&#128222;</i><div><b>Phone</b>+91 98765 43210</div></div>
+        <a class="btn btn-solid magnetic" href="https://www.google.com/maps/search/?api=1&query=Stackly+Chinna+Thirupathi" target="_blank" rel="noopener">Get directions</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. TEAM -->
+<section class="sec dark" id="team">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow js-reveal">Your contacts</span><h2 class="split">Meet the people who will reply</h2><p class="desc js-reveal">Three teams, one goal: getting you the right answer quickly.</p></div>
+    <div class="team">
+      <div class="member"><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80" alt="Portrait of Priya Nair"><h3>Priya Nair</h3><small>Head of Customer Success</small><p>Helps teams onboard, import data and get the most from every feature.</p><a href="mailto:hello@stackly.ai">Email Priya</a></div>
+      <div class="member"><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=80" alt="Portrait of Aarav Mehta"><h3>Aarav Mehta</h3><small>Sales Lead</small><p>Walks you through plans, pricing and tailored demos for your team.</p><a href="mailto:hello@stackly.ai">Email Aarav</a></div>
+      <div class="member"><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=400&q=80" alt="Portrait of Rohan Iyer"><h3>Rohan Iyer</h3><small>Technical Support Engineer</small><p>Solves integrations, security and admin questions, fast.</p><a href="mailto:hello@stackly.ai">Email Rohan</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. PROCESS -->
+<section class="sec light" id="process">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow js-reveal">What happens next</span><h2 class="split">From your message to a solution</h2><p class="desc js-reveal">We keep it simple and keep you informed at every step.</p></div>
+    <div class="steps four">
+      <div class="steps-line"><span id="stepsFill"></span></div>
+      <div class="step"><div class="dot">1</div><h3>You reach out</h3><p>Send the form, call or email whichever suits you best.</p></div>
+      <div class="step"><div class="dot">2</div><h3>We confirm</h3><p>You receive an acknowledgement and a named contact.</p></div>
+      <div class="step"><div class="dot">3</div><h3>We respond</h3><p>A specialist replies within hours with answers or next steps.</p></div>
+      <div class="step"><div class="dot">4</div><h3>We follow up</h3><p>We check that everything is resolved to your satisfaction.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. FAQ -->
+<section class="sec dark" id="faq-section">
+  <div class="wrap split-2">
+    <div class="head tight"><span class="eyebrow js-reveal">FAQ</span><h2 class="split">Before you write to us</h2><p class="desc js-reveal">A few quick answers that might save you time.</p></div>
+    <div class="faq">
+      <details class="js-reveal" open><summary>How fast will I get a reply?</summary><p>Most messages are answered within a few hours on working days, and always within one working day.</p></details>
+      <details class="js-reveal"><summary>Do you offer support outside office hours?</summary><p>Yes. Our human support team is available around the clock for paid plans, including weekends.</p></details>
+      <details class="js-reveal"><summary>Can I get a personalised demo?</summary><p>Of course. Choose "Book a demo" in the form and we will schedule a 20-minute walkthrough for your team.</p></details>
+      <details class="js-reveal"><summary>Where can I find billing help?</summary><p>Choose "Billing question" in the form, or manage invoices and plans from your billing settings.</p></details>
+      <details class="js-reveal"><summary>Is my information kept private?</summary><p>Yes. We only use your details to answer your enquiry and never share them with third parties.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- 8. CTA -->
+<section class="cta-band light" id="talk">
+  <div class="wrap">
+    <div class="cta-band-card js-reveal">
+      <div class="cta-band-copy">
+        <span class="eyebrow">Ready when you are</span>
+        <h2>Start working better together today</h2>
+        <p>Try Stackly free for 14 days and bring chat, video, docs and boards into one workspace.</p>
+      </div>
+      <div class="cta-band-actions">
+        <a href="./signup.html" class="btn btn-cream magnetic">Start free trial</a>
+        <a href="./service.html" class="btn btn-outline magnetic">Explore services</a>
+        <span class="cta-note">No credit card &middot; Cancel anytime</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap footer-top">
+    <div class="footer-brand">
+      <a href="./404.html" class="logo footer-logo"><img src="../assets/stackly_logo.webp" alt="Stackly logo" class="logo-img logo-img-footer"></a>
+      <p>The remote collaboration platform for teams that work across cities, countries and time zones.</p>
+      <div class="footer-socials">
+        <a href="./404.html" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.1 1 2.48 1s2.5 1.12 2.5 2.5zM.24 8.25h4.48V23H.24V8.25zM8.13 8.25h4.3v2.01h.06c.6-1.13 2.06-2.32 4.24-2.32 4.53 0 5.37 2.98 5.37 6.86V23h-4.48v-6.42c0-1.53-.03-3.5-2.13-3.5-2.14 0-2.47 1.67-2.47 3.39V23H8.13V8.25z"/></svg></a>
+        <a href="./404.html" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.4 8.46L23.3 22h-6.86l-5.37-6.6L4.9 22H1.8l7.9-9.03L1 2h7.03l4.86 6.03L18.9 2zm-1.2 18h1.9L7.4 3.9H5.36L17.7 20z"/></svg></a>
+        <a href="./404.html" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.5s-.23-1.64-.94-2.36c-.9-.94-1.9-.95-2.36-1C16.9 3 12 3 12 3s-4.89 0-8.19.14c-.46.05-1.46.06-2.36 1C.73 4.86.5 6.5.5 6.5S.27 8.42.27 10.35v1.79c0 1.93.23 3.85.23 3.85s.23 1.64.94 2.36c.9.94 2.08.91 2.6 1.01 1.89.18 8.02.24 8.02.24s4.9-.01 8.2-.15c.46-.05 1.46-.06 2.36-1 .71-.72.94-2.36.94-2.36s.23-1.92.23-3.85v-1.79c0-1.93-.23-3.85-.23-3.85zM9.75 14.85V8.15L15.9 11.5l-6.15 3.35z"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4 class="footer-col-title">Navigate</h4>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./service.html">Services</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4 class="footer-col-title">Contact</h4>
+      <address class="footer-address"><span class="fi" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span><span>MMR Complex, Periyakollappatty<br>Chinna Thirupathi, Tamil Nadu<br>636008</span></address>
+      <div class="footer-hours">Mon&ndash;Fri &middot; 9am &ndash; 6pm IST</div>
+      <a href="./404.html" class="footer-line"><span class="fi" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span><span>+91 98765 43210</span></a>
+      <a href="./404.html" class="footer-line"><span class="fi" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></span><span>hello@stackly.ai</span></a>
+    </div>
+    <div class="footer-col">
+      <h4 class="footer-col-title">Newsletter</h4>
+      <p class="footer-newsletter-copy">Monthly tips on running great remote teams.</p>
+      <a href="./404.html" class="footer-newsletter-row"><span>Subscribe now</span></a>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>&copy; 2026 STACKLY. All rights reserved.</span>
+    <div class="footer-legal-links"><a href="./404.html">Privacy Policy</a><span>&middot;</span><a href="./404.html">Terms</a></div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="../js/contact.js"></script>
+</body>
+</html>

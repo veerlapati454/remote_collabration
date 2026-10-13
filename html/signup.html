@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#0f4c4a">
+  <title>Sign Up | Stackly Remote Collaboration Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/signup.css">
+</head>
+<body>
+<main class="lg">
+
+  <!-- LEFT: brand panel (stays in view while the form scrolls) -->
+  <aside class="lg-brand" id="brandPanel">
+    <span class="orb o1" aria-hidden="true"></span>
+    <span class="orb o2" aria-hidden="true"></span>
+    <span class="dots" aria-hidden="true"></span>
+
+    <a href="../index.html" class="lg-logo"><img src="../assets/stackly_logo.webp" alt="Stackly logo"></a>
+
+    <div class="lg-body">
+      <span class="tag"><i class="live"></i> 14-day free trial &middot; No credit card</span>
+      <h1><span class="ln"><span>Build your team's</span></span><span class="ln"><span>workspace in minutes.</span></span></h1>
+      <p class="lead-p">Create your account and bring chat, video, docs and project boards together for a team that works from anywhere.</p>
+
+      <div class="setup" id="setup" aria-hidden="true">
+        <div class="setup-h"><span>Setting up your workspace</span><small>Auto-configured</small></div>
+        <div class="bar"><i></i></div>
+        <ul class="tasks">
+          <li><span class="ck"><i class="fa-solid fa-check"></i></span>Create team channels</li>
+          <li><span class="ck"><i class="fa-solid fa-check"></i></span>Connect calendar &amp; Google Drive</li>
+          <li><span class="ck"><i class="fa-solid fa-check"></i></span>Import chats, files and tasks</li>
+          <li><span class="ck"><i class="fa-solid fa-check"></i></span>Invite your teammates</li>
+        </ul>
+        <div class="team"><div class="stack"><span class="av a1">AR</span><span class="av a2">DS</span><span class="av a3">PN</span><span class="av a4">+9</span></div><span>12 teammates joined this week</span></div>
+      </div>
+    </div>
+
+    <div class="lg-stats">
+      <div><b data-count="100" data-suffix="+">100+</b><span>App integrations</span></div>
+      <div><b data-count="5" data-suffix=" min">5 min</b><span>Average setup</span></div>
+      <div><b data-count="24" data-suffix="/7">24/7</b><span>Human support</span></div>
+    </div>
+  </aside>
+
+  <!-- RIGHT: form -->
+  <section class="lg-form-wrap">
+    <div class="lg-card">
+      <a href="./login.html" class="back"><i class="fa-solid fa-arrow-left"></i> Back to login</a>
+
+      <span class="eyebrow">Get started free</span>
+      <h2>Create your account</h2>
+      <p class="sub">Join thousands of remote-first teams on Stackly.</p>
+
+      <form id="signupForm" novalidate>
+
+        <div class="sso">
+          <a href="./404.html"><i class="fa-brands fa-google"></i> Sign up with Google</a>
+          <a href="./404.html"><i class="fa-solid fa-key"></i> Company SSO</a>
+        </div>
+
+        <div class="divider">or sign up with email</div>
+
+        <div class="row2">
+          <div class="field">
+            <i class="fa-solid fa-user lead"></i>
+            <input type="text" id="fullName" name="fullName" placeholder=" " autocomplete="name" maxlength="48" spellcheck="false" required>
+            <label for="fullName">Full name</label>
+            <small class="hint" data-for="fullName">Letters and spaces only.</small>
+          </div>
+          <div class="field">
+            <i class="fa-solid fa-building lead"></i>
+            <input type="text" id="company" name="company" placeholder=" " autocomplete="organization" maxlength="40" required>
+            <label for="company">Company / team name</label>
+            <small class="hint" data-for="company">At least 2 characters.</small>
+          </div>
+        </div>
+
+        <div class="field">
+          <i class="fa-solid fa-envelope lead"></i>
+          <input type="email" id="email" name="email" placeholder=" " autocomplete="email" required>
+          <label for="email">Work email</label>
+          <small class="hint" data-for="email">We will send a confirmation link here.</small>
+        </div>
+
+        <fieldset class="sizes" id="sizes">
+          <legend>Team size</legend>
+          <div class="chips">
+            <label><input type="radio" name="size" value="1-10"><span>1&ndash;10</span></label>
+            <label><input type="radio" name="size" value="11-50"><span>11&ndash;50</span></label>
+            <label><input type="radio" name="size" value="51-200"><span>51&ndash;200</span></label>
+            <label><input type="radio" name="size" value="200+"><span>200+</span></label>
+          </div>
+          <small class="hint" data-for="size">Helps us tailor your onboarding.</small>
+        </fieldset>
+
+        <div class="field">
+          <i class="fa-solid fa-lock lead"></i>
+          <input type="password" id="password" name="password" placeholder=" " autocomplete="new-password" required>
+          <label for="password">Password</label>
+          <button type="button" class="eye" data-target="password" aria-label="Show password"><i class="fa-solid fa-eye"></i></button>
+          <div class="meter" id="meter" data-s="0" aria-hidden="true"><i></i><i></i><i></i><i></i><em id="meterText"></em></div>
+          <div class="checks" id="checks"><span data-r="len">8+ characters</span><span data-r="case">Upper &amp; lower case</span><span data-r="num">A number</span></div>
+          <small class="hint" data-for="password">Create a strong password.</small>
+        </div>
+
+        <div class="field">
+          <i class="fa-solid fa-shield-halved lead"></i>
+          <input type="password" id="confirmPassword" name="confirmPassword" placeholder=" " autocomplete="new-password" required>
+          <label for="confirmPassword">Confirm password</label>
+          <button type="button" class="eye" data-target="confirmPassword" aria-label="Show password"><i class="fa-solid fa-eye"></i></button>
+          <small class="hint" data-for="confirmPassword">Re-enter your password.</small>
+        </div>
+
+        <div class="terms-wrap">
+          <label class="terms">
+            <input type="checkbox" id="agreeTerms" name="agreeTerms" required>
+            <span>I agree to the <a href="./404.html">Terms of Service</a> and <a href="./404.html">Privacy Policy</a></span>
+          </label>
+          <small class="hint" data-for="agreeTerms">You must accept the terms to create an account.</small>
+        </div>
+
+        <button type="submit" class="btn" id="signupBtn">
+          <span class="lbl">Create account <i class="fa-solid fa-arrow-right"></i></span>
+          <span class="spin" aria-hidden="true"></span>
+          <span class="done"><i class="fa-solid fa-circle-check"></i> Account created</span>
+        </button>
+
+        <p class="signup">Already have an account? <a href="./login.html">Sign in</a></p>
+      </form>
+
+      <p class="secure"><i class="fa-solid fa-shield-halved"></i> Encrypted in transit and at rest &middot; SOC 2 certified</p>
+    </div>
+  </section>
+
+</main>
+<script src="../js/signup.js"></script>
+</body>
+</html>

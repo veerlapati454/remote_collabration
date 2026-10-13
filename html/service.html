@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services — Stackly Remote Collaboration Platform</title>
+<script>
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+  window.scrollTo(0, 0);
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/service.css">
+</head>
+<body class="service-page">
+
+<div id="scrollBar" aria-hidden="true"></div>
+
+<header id="site-header">
+  <div class="wrap nav-inner">
+    <a href="../index.html" class="logo"><img src="../assets/stackly_logo.webp" alt="Stackly logo" class="logo-img"></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="../index.html" class="nav-logo"><img src="../assets/stackly_logo.webp" alt="Stackly logo" class="logo-img nav-logo-img"></a>
+      <button class="nav-close" id="navClose" aria-label="Close menu">&times;</button>
+      <a href="../index.html">Home</a>
+      <a href="./about.html">About</a>
+      <a href="./service.html" class="active">Services</a>
+      <a href="./blog.html">Blog</a>
+      <a href="./contact.html">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="./login.html" class="btn btn-outline magnetic">Login</a>
+      <a href="./signup.html" class="btn btn-solid magnetic">Signup</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">&#9776;</button>
+    </div>
+  </div>
+</header>
+
+<!-- 1. PAGE HERO -->
+<section class="page-hero dark" id="top">
+  <div class="hero-bg" aria-hidden="true">
+    <span class="orb o1"></span><span class="orb o2"></span><span class="orb o3"></span>
+  </div>
+  <div class="wrap page-hero-inner">
+    <div class="ph-text">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a><span>/</span><b>Services</b></nav>
+      <h1 class="ph-title split">Services built for teams that work from anywhere</h1>
+      <p class="ph-lead">Chat, video, shared docs, project boards and more, all connected in one calm workspace. Explore everything Stackly does to help distributed teams ship faster.</p>
+      <div class="btn-row">
+        <a href="./signup.html" class="btn btn-cream magnetic">Start free trial</a>
+        <a href="#services" class="btn btn-outline magnetic">Explore services</a>
+      </div>
+    </div>
+    <div class="ph-visual">
+      <div class="hero-card js-flip"><img src="../assets/q17.webp" alt="Team in a video meeting using a laptop"></div>
+      <div class="float-chip fc1"><b>&#127909;</b> Standup &middot; 9 online</div>
+      <div class="float-chip fc2"><b>&#9989;</b> Sprint 14 on track</div>
+      <div class="float-chip fc3"><b>&#128274;</b> SOC 2 certified</div>
+      <div class="est-badge" aria-hidden="true"><small>Core</small><b>6 tools</b></div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<section class="marquee-band" aria-label="Our services">
+  <div class="marquee-track">
+    <div class="marquee-group"><span>Team chat</span><span>HD video</span><span>Shared docs</span><span>Project boards</span><span>Universal search</span><span>Insights</span><span>Admin controls</span><span>Time-zone smart</span></div>
+    <div class="marquee-group" aria-hidden="true"><span>Team chat</span><span>HD video</span><span>Shared docs</span><span>Project boards</span><span>Universal search</span><span>Insights</span><span>Admin controls</span><span>Time-zone smart</span></div>
+  </div>
+</section>
+
+<!-- 2. SERVICES (photo flip cards) -->
+<section class="sec light" id="services">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow js-reveal">What we offer</span><h2 class="split">Six services, one calm workspace</h2><p class="desc js-reveal">Hover or tap a card to see what is inside each service.</p></div>
+    <div class="svc-grid">
+      <div class="scard" tabindex="0"><div class="scard-in">
+        <div class="sface front"><img loading="lazy" decoding="async" src="../assets/q18.webp" alt="Colleagues chatting while working on laptops"><div class="smeta"><span class="sico">&#128172;</span><h3>Team chat</h3><span class="ssub">Channels, threads and DMs</span></div></div>
+        <div class="sface back"><h3>Team chat</h3><p>Keep every conversation organised and searchable.</p><ul class="sl"><li>Project channels and threads</li><li>Pinned decisions</li><li>Instant message search</li></ul></div>
+      </div></div>
+      <div class="scard" tabindex="0"><div class="scard-in">
+        <div class="sface front"><img loading="lazy" decoding="async" src="../assets/q19.webp" alt="Team meeting around a table"><div class="smeta"><span class="sico">&#127909;</span><h3>HD video meetings</h3><span class="ssub">Crisp calls for up to 200</span></div></div>
+        <div class="sface back"><h3>HD video meetings</h3><p>Meet face to face without the meeting overload.</p><ul class="sl"><li>Screen sharing</li><li>Auto-transcripts</li><li>Recordings saved to channels</li></ul></div>
+      </div></div>
+      <div class="scard" tabindex="0"><div class="scard-in">
+        <div class="sface front"><img loading="lazy" decoding="async" src="../assets/q20.webp" alt="Workspace with laptop and notes"><div class="smeta"><span class="sico">&#128221;</span><h3>Shared docs</h3><span class="ssub">Edit together, live</span></div></div>
+        <div class="sface back"><h3>Shared docs</h3><p>Write, comment and decide in the same place.</p><ul class="sl"><li>Live cursors</li><li>Comments and mentions</li><li>Full version history</li></ul></div>
+      </div></div>
+      <div class="scard" tabindex="0"><div class="scard-in">
+        <div class="sface front"><img loading="lazy" decoding="async" src="../assets/q21.webp" alt="Team planning tasks together"><div class="smeta"><span class="sico">&#9989;</span><h3>Project boards</h3><span class="ssub">Plan, assign, track</span></div></div>
+        <div class="sface back"><h3>Project boards</h3><p>See who is doing what, and by when.</p><ul class="sl"><li>Kanban, list and timeline</li><li>Due-date reminders</li><li>Docs linked to tasks</li></ul></div>
+      </div></div>
+      <div class="scard" tabindex="0"><div class="scard-in">
+        <div class="sface front"><img loading="lazy" decoding="async" src="../assets/q22.webp" alt="Analytics dashboard on a screen"><div class="smeta"><span class="sico">&#128200;</span><h3>Insights</h3><span class="ssub">Know how work flows</span></div></div>
+        <div class="sface back"><h3>Insights</h3><p>Understand how your team really works.</p><ul class="sl"><li>Response-time trends</li><li>Workload balance</li><li>Delivery dashboards</li></ul></div>
+      </div></div>
+      <div class="scard" tabindex="0"><div class="scard-in">
+        <div class="sface front"><img loading="lazy" decoding="async" src="../assets/q23.webp" alt="Secure data centre servers"><div class="smeta"><span class="sico">&#128274;</span><h3>Security &amp; admin</h3><span class="ssub">Safe by default</span></div></div>
+        <div class="sface back"><h3>Security &amp; admin</h3><p>Enterprise-grade control on every plan.</p><ul class="sl"><li>SSO and role-based access</li><li>Audit logs</li><li>Data retention rules</li></ul></div>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. USE-CASE TABS -->
+<section class="sec dark" id="usecases">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow js-reveal">See it in action</span><h2 class="split">One platform, every kind of team</h2><p class="desc js-reveal">Pick a team to see how Stackly fits the way they work.</p></div>
+    <div class="tabs">
+      <div class="tab-list js-reveal" role="tablist">
+        <button class="tab active" role="tab" aria-selected="true">Engineering</button>
+        <button class="tab" role="tab" aria-selected="false">Design</button>
+        <button class="tab" role="tab" aria-selected="false">Marketing</button>
+        <button class="tab" role="tab" aria-selected="false">Customer success</button>
+      </div>
+      <div class="tab-panels">
+        <div class="tab-panel active">
+          <div class="tp-text"><h3>Ship faster with fewer stand-ups</h3><p>Link pull requests to tasks, run async standups and keep release channels tidy, so engineers spend more time building.</p><ul class="tp-list"><li>GitHub and Jira sync</li><li>Async standups with recorded updates</li><li>Incident channels with auto-timelines</li></ul><a href="./signup.html" class="btn btn-cream magnetic">Try it free</a></div>
+          <div class="tp-img"><img loading="lazy" decoding="async" src="../assets/q24.webp" alt="Developer writing code"></div>
+        </div>
+        <div class="tab-panel">
+          <div class="tp-text"><h3>Review work without long meetings</h3><p>Share prototypes, collect pinned feedback and approve designs in the same thread where the conversation started.</p><ul class="tp-list"><li>Figma prototypes in the channel</li><li>Pinned, point-and-comment feedback</li><li>Clear approvals and version history</li></ul><a href="./signup.html" class="btn btn-cream magnetic">Try it free</a></div>
+          <div class="tp-img"><img loading="lazy" decoding="async" src="../assets/q25.webp" alt="Designers reviewing work"></div>
+        </div>
+        <div class="tab-panel">
+          <div class="tp-text"><h3>Run campaigns from one shared board</h3><p>Plan launches, keep every asset, brief and approval in one place and see exactly what is due this week.</p><ul class="tp-list"><li>Campaign boards and calendars</li><li>Briefs and assets side by side</li><li>One-click approval flows</li></ul><a href="./signup.html" class="btn btn-cream magnetic">Try it free</a></div>
+          <div class="tp-img"><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1200&q=80" alt="Marketing team planning"></div>
+        </div>
+        <div class="tab-panel">
+          <div class="tp-text"><h3>Keep every customer conversation connected</h3><p>Hand issues to engineering with full context, track response times and make sure no customer waits in silence.</p><ul class="tp-list"><li>Shared channels for key accounts</li><li>Hand-offs with full context</li><li>Response-time reminders</li></ul><a href="./signup.html" class="btn btn-cream magnetic">Try it free</a></div>
+          <div class="tp-img"><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80" alt="Support team working together"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. PROCESS -->
+<section class="sec light" id="process">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow js-reveal">Getting started</span><h2 class="split">From sign-up to shipping in four steps</h2><p class="desc js-reveal">Most teams are fully up and running in under a week.</p></div>
+    <div class="steps four">
+      <div class="steps-line"><span id="stepsFill"></span></div>
+      <div class="step"><div class="dot">1</div><h3>Discover</h3><p>We learn how your team works today and map the tools you want to replace.</p></div>
+      <div class="step"><div class="dot">2</div><h3>Onboard</h3><p>Invite teammates, set up channels and import chats, files and tasks.</p></div>
+      <div class="step"><div class="dot">3</div><h3>Integrate</h3><p>Connect calendars, cloud storage and code repositories in a click.</p></div>
+      <div class="step"><div class="dot">4</div><h3>Support</h3><p>Our human team stays with you around the clock as you grow.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. INTEGRATIONS + NUMBERS -->
+<section class="sec dark" id="integrations">
+  <div class="wrap">
+    <div class="split-2 rev">
+      <div class="side-image js-flip"><img class="px" loading="lazy" decoding="async" src="../assets/q25.webp" alt="Colleagues working with several apps"></div>
+      <div class="head tight"><span class="eyebrow js-reveal">Integrations</span><h2 class="split">Works with the tools you already use</h2><p class="desc js-reveal">Connect over 100 apps without leaving your workspace, so nothing about your current workflow has to change.</p>
+        <div class="chips js-reveal"><span>Google Drive</span><span>GitHub</span><span>Figma</span><span>Jira</span><span>Notion</span><span>Zoom</span><span>Salesforce</span><span>Calendar</span><span>Dropbox</span><span>Slack Import</span></div>
+      </div>
+    </div>
+    <div class="stats-row int-stats">
+      <div class="stat"><div class="num" data-count="100" data-suffix="+">100+</div><div class="label">App integrations</div></div>
+      <div class="stat"><div class="num" data-count="5" data-suffix=" min">5 min</div><div class="label">Average setup time</div></div>
+      <div class="stat"><div class="num" data-count="24" data-suffix="/7">24/7</div><div class="label">Human support</div></div>
+      <div class="stat"><div class="num" data-count="99.9" data-suffix="%" data-dec="1">99.9%</div><div class="label">Uptime across regions</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. PRICING -->
+<section class="sec light" id="pricing">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow js-reveal">Pricing</span><h2 class="split">Simple plans that grow with you</h2><p class="desc js-reveal">Start free. Upgrade when your team is ready.</p></div>
+    <div class="bill-wrap js-reveal">
+      <div class="bill-toggle" data-mode="month" role="group" aria-label="Billing period">
+        <span class="bt-thumb" aria-hidden="true"></span>
+        <button class="bt-opt on" data-mode="month">Monthly</button>
+        <button class="bt-opt" data-mode="year">Yearly <em>-20%</em></button>
+      </div>
+    </div>
+    <div class="plans">
+      <div class="plan"><h3>Starter</h3><div class="amt">&#8377;<span class="amt-val" data-month="0" data-year="0">0</span><small>/user/mo</small></div><ul><li>Up to 10 members</li><li>Team chat &amp; shared docs</li><li>1 GB storage</li></ul><a href="./signup.html" class="btn btn-outline magnetic">Get started</a></div>
+      <div class="plan featured"><span class="badge">Most popular</span><h3>Team</h3><div class="amt">&#8377;<span class="amt-val" data-month="499" data-year="399">499</span><small>/user/mo</small></div><ul><li>Unlimited members</li><li>HD video up to 200</li><li>Project boards &amp; insights</li><li>Priority support</li></ul><a href="./signup.html" class="btn btn-cream magnetic">Start free trial</a></div>
+      <div class="plan"><h3>Enterprise</h3><div class="amt">Custom</div><ul><li>SSO &amp; audit logs</li><li>Dedicated manager</li><li>Custom data retention</li></ul><a href="./contact.html" class="btn btn-outline magnetic">Talk to sales</a></div>
+    </div>
+    <p class="price-note js-reveal">All paid plans include a 14-day free trial. Prices are in INR and exclude GST.</p>
+  </div>
+</section>
+
+<!-- 7. FAQ -->
+<section class="sec dark" id="faq-section">
+  <div class="wrap split-2">
+    <div class="head tight"><span class="eyebrow js-reveal">FAQ</span><h2 class="split">Questions, answered</h2><p class="desc js-reveal">Can't find what you need? Our team replies within a few hours.</p></div>
+    <div class="faq">
+      <details class="js-reveal" open><summary>Is there a free trial?</summary><p>Yes. Every paid plan starts with a 14-day trial, with no credit card required.</p></details>
+      <details class="js-reveal"><summary>Can I import data from other tools?</summary><p>You can import chats, files and tasks from popular tools using guided importers.</p></details>
+      <details class="js-reveal"><summary>How is my data protected?</summary><p>Data is encrypted in transit and at rest, and admins control access, retention and audit logs.</p></details>
+      <details class="js-reveal"><summary>Does Stackly work across time zones?</summary><p>Yes. Local-time indicators, scheduled messages and recorded updates keep every region in sync.</p></details>
+      <details class="js-reveal"><summary>Can I change plans later?</summary><p>Absolutely. Upgrade, downgrade or cancel at any time from your billing settings.</p></details>
+      <details class="js-reveal"><summary>Do you offer onboarding help?</summary><p>Yes. Our team will help you set up channels, import data and train your teammates at no extra cost.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- 8. CTA BAND -->
+<section class="cta-band light" id="talk">
+  <div class="wrap">
+    <div class="cta-band-card js-reveal">
+      <div class="cta-band-copy">
+        <span class="eyebrow">Let's talk</span>
+        <h2>Ready to see Stackly in action?</h2>
+        <p>Book a 20-minute walkthrough and we'll show how your team can cut meetings and ship faster.</p>
+      </div>
+      <div class="cta-band-actions">
+        <a href="./contact.html" class="btn btn-cream magnetic">Book a demo</a>
+        <a href="./signup.html" class="btn btn-outline magnetic">Start free trial</a>
+        <span class="cta-note">No credit card &middot; Cancel anytime</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap footer-top">
+    <div class="footer-brand">
+      <a href="./404.html" class="logo footer-logo"><img src="../assets/stackly_logo.webp" alt="Stackly logo" class="logo-img logo-img-footer"></a>
+      <p>The remote collaboration platform for teams that work across cities, countries and time zones.</p>
+      <div class="footer-socials">
+        <a href="./404.html" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.1 1 2.48 1s2.5 1.12 2.5 2.5zM.24 8.25h4.48V23H.24V8.25zM8.13 8.25h4.3v2.01h.06c.6-1.13 2.06-2.32 4.24-2.32 4.53 0 5.37 2.98 5.37 6.86V23h-4.48v-6.42c0-1.53-.03-3.5-2.13-3.5-2.14 0-2.47 1.67-2.47 3.39V23H8.13V8.25z"/></svg></a>
+        <a href="./404.html" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.4 8.46L23.3 22h-6.86l-5.37-6.6L4.9 22H1.8l7.9-9.03L1 2h7.03l4.86 6.03L18.9 2zm-1.2 18h1.9L7.4 3.9H5.36L17.7 20z"/></svg></a>
+        <a href="./404.html" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.5s-.23-1.64-.94-2.36c-.9-.94-1.9-.95-2.36-1C16.9 3 12 3 12 3s-4.89 0-8.19.14c-.46.05-1.46.06-2.36 1C.73 4.86.5 6.5.5 6.5S.27 8.42.27 10.35v1.79c0 1.93.23 3.85.23 3.85s.23 1.64.94 2.36c.9.94 2.08.91 2.6 1.01 1.89.18 8.02.24 8.02.24s4.9-.01 8.2-.15c.46-.05 1.46-.06 2.36-1 .71-.72.94-2.36.94-2.36s.23-1.92.23-3.85v-1.79c0-1.93-.23-3.85-.23-3.85zM9.75 14.85V8.15L15.9 11.5l-6.15 3.35z"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4 class="footer-col-title">Navigate</h4>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./service.html">Services</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4 class="footer-col-title">Contact</h4>
+      <address class="footer-address"><span class="fi" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span><span>MMR Complex, Periyakollappatty<br>Chinna Thirupathi, Tamil Nadu<br>636008</span></address>
+      <div class="footer-hours">Mon&ndash;Fri &middot; 9am &ndash; 6pm IST</div>
+      <a href="./404.html" class="footer-line"><span class="fi" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span><span>+91 98765 43210</span></a>
+      <a href="./404.html" class="footer-line"><span class="fi" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></span><span>hello@stackly.ai</span></a>
+    </div>
+    <div class="footer-col">
+      <h4 class="footer-col-title">Newsletter</h4>
+      <p class="footer-newsletter-copy">Monthly tips on running great remote teams.</p>
+      <a href="./404.html" class="footer-newsletter-row"><span>Subscribe now</span></a>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>&copy; 2026 STACKLY. All rights reserved.</span>
+    <div class="footer-legal-links"><a href="./404.html">Privacy Policy</a><span>&middot;</span><a href="./404.html">Terms</a></div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="../js/service.js"></script>
+</body>
+</html>

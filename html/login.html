@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#0f4c4a">
+  <title>Login | Stackly Remote Collaboration Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+<main class="lg">
+
+  <!-- LEFT: brand / workspace preview -->
+  <aside class="lg-brand" id="brandPanel">
+    <span class="orb o1" aria-hidden="true"></span>
+    <span class="orb o2" aria-hidden="true"></span>
+    <span class="dots" aria-hidden="true"></span>
+
+    <a href="../index.html" class="lg-logo"><img src="../assets/stackly_logo.webp" alt="Stackly logo"></a>
+
+    <div class="lg-body">
+      <span class="tag"><i class="live"></i> 12,000+ teams online right now</span>
+      <h1><span class="ln"><span>Your whole team,</span></span><span class="ln"><span>one calm workspace.</span></span></h1>
+      <p>Sign in to chat, meet, co-edit docs and track projects with teammates in every time zone, all from one place.</p>
+
+      <!-- animated workspace preview -->
+      <div class="mock" id="mock" aria-hidden="true">
+        <div class="m-card chat">
+          <div class="chat-h"><span># product-launch</span><small>9 online</small></div>
+          <div class="msgs" id="msgs"></div>
+          <div class="chat-f">Message #product-launch</div>
+        </div>
+        <div class="m-card call">
+          <div class="tile"><span class="av a4">MK</span><em>Standup &middot; 09:41</em></div>
+          <div class="call-f"><div class="stack"><span class="av a1">AR</span><span class="av a2">DS</span><span class="av a3">PN</span><span class="av a4">+6</span></div><span class="rec">Live</span></div>
+        </div>
+        <div class="chip c1"><i class="fa-solid fa-circle-check" style="color:#2fae66"></i> Sprint 14 on track</div>
+        <div class="chip c2"><i class="fa-solid fa-file-lines"></i> Roadmap.doc &middot; 3 editing</div>
+        <div class="cursor k1"><svg viewBox="0 0 24 24"><path d="M3 2l17 8-7.5 2L9 20z"/></svg><b>Maya</b></div>
+        <div class="cursor k2"><svg viewBox="0 0 24 24"><path d="M3 2l17 8-7.5 2L9 20z"/></svg><b>Dev</b></div>
+      </div>
+    </div>
+
+    <div class="lg-stats">
+      <div><b data-count="100" data-suffix="+">100+</b><span>App integrations</span></div>
+      <div><b data-count="24" data-suffix="/7">24/7</b><span>Human support</span></div>
+      <div><b data-count="99.9" data-suffix="%" data-dec="1">99.9%</b><span>Uptime</span></div>
+    </div>
+  </aside>
+
+  <!-- RIGHT: form -->
+  <section class="lg-form-wrap">
+    <div class="lg-card">
+      <a href="../index.html" class="back"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+
+      <span class="eyebrow">Secure sign in</span>
+      <h2>Welcome back</h2>
+      <p class="sub">Sign in to continue to your workspace.</p>
+
+      <div class="sso">
+        <a href="./404.html"><i class="fa-brands fa-google"></i> Google</a>
+        <a href="./404.html"><i class="fa-solid fa-key"></i> Company SSO</a>
+      </div>
+      <div class="divider">or sign in with email</div>
+
+      <form id="loginForm" novalidate>
+
+        <fieldset class="role">
+          <legend>Login as</legend>
+          <div class="seg" id="seg" data-role="user">
+            <label><input type="radio" name="role" value="user" checked><span><i class="fa-solid fa-user"></i> Member</span></label>
+            <label><input type="radio" name="role" value="admin"><span><i class="fa-solid fa-user-shield"></i> Admin</span></label>
+            <i class="thumb" aria-hidden="true"></i>
+          </div>
+        </fieldset>
+
+        <div class="field">
+          <i class="fa-solid fa-envelope lead"></i>
+          <input type="email" id="email" name="email" placeholder=" " autocomplete="email" required>
+          <label for="email">Work email</label>
+          <small class="hint" data-for="email">Use the email you signed up with.</small>
+        </div>
+
+        <div class="field">
+          <i class="fa-solid fa-lock lead"></i>
+          <input type="password" id="password" name="password" placeholder=" " autocomplete="current-password" required>
+          <label for="password">Password</label>
+          <button type="button" class="eye" aria-label="Show password"><i class="fa-solid fa-eye"></i></button>
+          <div class="strength" id="strength" data-s="0" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+          <small class="hint" data-for="password">Minimum 6 characters.</small>
+          <small class="caps" id="capsWarn" hidden><i class="fa-solid fa-triangle-exclamation"></i> Caps Lock is on</small>
+        </div>
+
+        <div class="row">
+          <label class="remember"><input type="checkbox" id="rememberMe" name="rememberMe"><span>Keep me signed in</span></label>
+          <a href="./404.html" class="forgot">Forgot password?</a>
+        </div>
+
+        <button type="submit" class="btn" id="loginBtn">
+          <span class="lbl">Sign in <i class="fa-solid fa-arrow-right"></i></span>
+          <span class="spin" aria-hidden="true"></span>
+        </button>
+
+        <p class="signup">New to Stackly? <a href="./signup.html">Start your free trial</a></p>
+      </form>
+
+      <p class="secure"><i class="fa-solid fa-shield-halved"></i> Encrypted in transit and at rest &middot; SOC 2 certified</p>
+    </div>
+  </section>
+
+</main>
+<script src="../js/login.js"></script>
+</body>
+</html>

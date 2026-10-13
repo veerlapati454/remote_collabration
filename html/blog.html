@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog — Stackly Remote Collaboration Platform</title>
+<script>
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+  window.scrollTo(0, 0);
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/blog.css">
+</head>
+<body class="blog-page">
+
+<div id="scrollBar" aria-hidden="true"></div>
+
+<header id="site-header">
+  <div class="wrap nav-inner">
+    <a href="../index.html" class="logo"><img src="../assets/stackly_logo.webp" alt="Stackly logo" class="logo-img"></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="../index.html" class="nav-logo"><img src="../assets/stackly_logo.webp" alt="Stackly logo" class="logo-img nav-logo-img"></a>
+      <button class="nav-close" id="navClose" aria-label="Close menu">&times;</button>
+      <a href="../index.html">Home</a>
+      <a href="./about.html">About</a>
+      <a href="./service.html">Services</a>
+      <a href="./blog.html" class="active">Blog</a>
+      <a href="./contact.html">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="./login.html" class="btn btn-outline magnetic">Login</a>
+      <a href="./signup.html" class="btn btn-solid magnetic">Signup</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">&#9776;</button>
+    </div>
+  </div>
+</header>
+
+<!-- 1. HERO -->
+<section class="page-hero dark" id="top">
+  <div class="hero-bg" aria-hidden="true"><span class="orb o1"></span><span class="orb o2"></span><span class="orb o3"></span></div>
+  <div class="wrap page-hero-inner">
+    <div class="ph-text">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a><span>/</span><b>Blog</b></nav>
+      <h1 class="ph-title split">Ideas for teams that work from anywhere</h1>
+      <p class="ph-lead">Practical guides, product news and real stories on async work, great meetings and building a culture that thrives across time zones.</p>
+      <div class="btn-row">
+        <a href="#articles" class="btn btn-cream magnetic">Read latest posts</a>
+        <a href="#newsletter" class="btn btn-outline magnetic">Subscribe</a>
+      </div>
+    </div>
+    <div class="ph-visual">
+      <div class="hero-card js-flip"><img src="../assets/q26.webp" alt="Team reading and discussing ideas together"></div>
+      <div class="float-chip fc1"><b>&#128214;</b> 120+ articles</div>
+      <div class="float-chip fc2"><b>&#9997;&#65039;</b> New post weekly</div>
+      <div class="float-chip fc3"><b>&#127760;</b> Read in 40 countries</div>
+      <div class="est-badge" aria-hidden="true"><small>Weekly</small><b>Reads</b></div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<section class="marquee-band" aria-label="Blog topics">
+  <div class="marquee-track">
+    <div class="marquee-group"><span>Async work</span><span>Better meetings</span><span>Team culture</span><span>Product updates</span><span>Security</span><span>Productivity</span><span>Case studies</span><span>Hiring remote</span></div>
+    <div class="marquee-group" aria-hidden="true"><span>Async work</span><span>Better meetings</span><span>Team culture</span><span>Product updates</span><span>Security</span><span>Productivity</span><span>Case studies</span><span>Hiring remote</span></div>
+  </div>
+</section>
+
+<!-- 2. FEATURED -->
+<section class="sec light" id="featured">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow js-reveal">Featured story</span><h2 class="split">The story everyone is reading</h2><p class="desc js-reveal">Our editors' pick of the month, packed with ideas you can use on Monday.</p></div>
+    <div class="feat">
+      <div class="feat-img js-flip"><span class="tag">Async work</span><img loading="lazy" decoding="async" src="../assets/q27.webp" alt="Remote team on a video call"></div>
+      <div class="feat-text js-reveal">
+        <h3>How we cut meetings by 40% without losing alignment</h3>
+        <p>Meetings are not the enemy; unclear meetings are. We share the exact framework our own team used: written briefs first, recorded updates second, and live calls only for decisions. The result was fewer calendar invites and faster shipping.</p>
+        <div class="meta"><i>&#128100; Aarav Mehta</i><i>&#128197; 02 Oct 2026</i><i>&#9201; 8 min read</i></div>
+        <a href="./404.html" class="btn btn-solid magnetic">Read full story</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. TOPICS (flip cards) -->
+<section class="sec dark" id="topics">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow js-reveal">Browse by topic</span><h2 class="split">Find what you need to read next</h2><p class="desc js-reveal">Hover or tap a card to explore each topic.</p></div>
+    <div class="tp-grid">
+      <div class="tcard" tabindex="0"><div class="tcard-in">
+        <div class="tface front"><img loading="lazy" decoding="async" src="../assets/q28.webp" alt="Colleagues collaborating on laptops"><div class="tmeta"><h3>Remote culture</h3><span>32 articles</span></div></div>
+        <div class="tface back"><h3>Remote culture</h3><p>Build trust, belonging and rituals when your team never shares an office.</p><a href="./404.html">Explore topic</a></div>
+      </div></div>
+      <div class="tcard" tabindex="0"><div class="tcard-in">
+        <div class="tface front"><img loading="lazy" decoding="async" src="../assets/q29.webp" alt="Team meeting around a table"><div class="tmeta"><h3>Better meetings</h3><span>24 articles</span></div></div>
+        <div class="tface back"><h3>Better meetings</h3><p>Agendas, recordings and async habits that give everyone their time back.</p><a href="./404.html">Explore topic</a></div>
+      </div></div>
+      <div class="tcard" tabindex="0"><div class="tcard-in">
+        <div class="tface front"><img loading="lazy" decoding="async" src="../assets/q30.webp" alt="Analytics dashboard on a screen"><div class="tmeta"><h3>Productivity</h3><span>41 articles</span></div></div>
+        <div class="tface back"><h3>Productivity</h3><p>Data-backed ways to plan sprints, protect focus time and measure what matters.</p><a href="./404.html">Explore topic</a></div>
+      </div></div>
+      <div class="tcard" tabindex="0"><div class="tcard-in">
+        <div class="tface front"><img loading="lazy" decoding="async" src="../assets/q31.webp" alt="Secure data centre servers"><div class="tmeta"><h3>Security</h3><span>18 articles</span></div></div>
+        <div class="tface back"><h3>Security</h3><p>Keep company data safe with SSO, access controls and sensible policies.</p><a href="./404.html">Explore topic</a></div>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. ARTICLES -->
+<section class="sec light" id="articles">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow js-reveal">Latest articles</span><h2 class="split">Fresh reads from the Stackly team</h2><p class="desc js-reveal">Filter by category to jump straight to what interests you.</p></div>
+    <div class="filters js-reveal" role="group" aria-label="Filter articles">
+      <button class="fbtn active" data-filter="all">All</button>
+      <button class="fbtn" data-filter="culture">Culture</button>
+      <button class="fbtn" data-filter="product">Product</button>
+      <button class="fbtn" data-filter="productivity">Productivity</button>
+      <button class="fbtn" data-filter="security">Security</button>
+    </div>
+    <div class="posts">
+      <article class="post" data-cat="culture"><div class="post-img"><img loading="lazy" decoding="async" src="../assets/q31.webp" alt="Team planning together"></div><div class="post-body"><span class="tag">Culture</span><h3>7 rituals that keep distributed teams close</h3><p>From virtual coffee breaks to quarterly meetups, these small habits make a big difference.</p><div class="meta"><i>5 min read</i><i>&middot;</i><i>28 Sep 2026</i></div></div></article>
+      <article class="post" data-cat="product"><div class="post-img"><img loading="lazy" decoding="async" src="../assets/q32.webp" alt="Laptop with notes on a desk"></div><div class="post-body"><span class="tag">Product</span><h3>Introducing live cursors in shared docs</h3><p>See exactly who is editing what, with comments and mentions built right into the page.</p><div class="meta"><i>3 min read</i><i>&middot;</i><i>22 Sep 2026</i></div></div></article>
+      <article class="post" data-cat="productivity"><div class="post-img"><img loading="lazy" decoding="async" src="../assets/q33.webp" alt="Developer writing code"></div><div class="post-body"><span class="tag">Productivity</span><h3>Async standups: a guide for engineering leads</h3><p>Replace the daily call with recorded updates and keep every release on track.</p><div class="meta"><i>6 min read</i><i>&middot;</i><i>15 Sep 2026</i></div></div></article>
+      <article class="post" data-cat="security"><div class="post-img"><img loading="lazy" decoding="async" src="../assets/q34.webp" alt="Server racks in a data centre"></div><div class="post-body"><span class="tag">Security</span><h3>A simple checklist for securing remote teams</h3><p>Ten practical steps, from single sign-on to audit logs, that any company can adopt this week.</p><div class="meta"><i>7 min read</i><i>&middot;</i><i>09 Sep 2026</i></div></div></article>
+      <article class="post" data-cat="culture"><div class="post-img"><img loading="lazy" decoding="async" src="../assets/q35.webp" alt="Marketing team planning a campaign"></div><div class="post-body"><span class="tag">Culture</span><h3>Onboarding new hires when nobody is in the office</h3><p>A 30-day plan that helps newcomers feel confident, connected and productive.</p><div class="meta"><i>6 min read</i><i>&middot;</i><i>02 Sep 2026</i></div></div></article>
+      <article class="post" data-cat="product"><div class="post-img"><img loading="lazy" decoding="async" src="../assets/q36.webp" alt="Designers reviewing work"></div><div class="post-body"><span class="tag">Product</span><h3>New: project timelines and due-date reminders</h3><p>Plan visually, assign clearly and let Stackly nudge people before deadlines slip.</p><div class="meta"><i>4 min read</i><i>&middot;</i><i>26 Aug 2026</i></div></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- 5. STATS -->
+<section class="sec dark" id="numbers">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow js-reveal">Our community</span><h2 class="split">Readers who work differently</h2><p class="desc js-reveal">Thousands of remote-first teams learn from our blog every month.</p></div>
+    <div class="stats-row blog-stats">
+      <div class="stat"><div class="num" data-count="120" data-suffix="+">120+</div><div class="label">Articles published</div></div>
+      <div class="stat"><div class="num" data-count="50" data-suffix="K+">50K+</div><div class="label">Monthly readers</div></div>
+      <div class="stat"><div class="num" data-count="12" data-suffix="">12</div><div class="label">Expert writers</div></div>
+      <div class="stat"><div class="num" data-count="4.9" data-suffix="/5" data-dec="1">4.9/5</div><div class="label">Reader rating</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. AUTHORS -->
+<section class="sec light" id="authors">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow js-reveal">Meet the writers</span><h2 class="split">Voices behind the blog</h2><p class="desc js-reveal">Practitioners who run remote teams every day.</p></div>
+    <div class="authors">
+      <div class="author"><img loading="lazy" decoding="async" src="../assets/r12.webp" alt="Portrait of Aarav Mehta"><h3>Aarav Mehta</h3><small>Head of Product</small><p>Writes about async workflows and building tools people actually enjoy using.</p></div>
+      <div class="author"><img loading="lazy" decoding="async" src="../assets/r13.webp" alt="Portrait of Priya Nair"><h3>Priya Nair</h3><small>People &amp; Culture Lead</small><p>Shares lessons on hiring, onboarding and keeping teams connected across time zones.</p></div>
+      <div class="author"><img loading="lazy" decoding="async" src="../assets/r55.webp" alt="Portrait of Rohan Iyer"><h3>Rohan Iyer</h3><small>Security Engineer</small><p>Explains complex security topics in plain language that any team can act on.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. NEWSLETTER -->
+<section class="sec dark" id="newsletter">
+  <div class="wrap">
+    <div class="nl">
+      <span class="eyebrow js-reveal">Newsletter</span>
+      <h2 class="split">Get the best of remote work in your inbox</h2>
+      <p class="desc js-reveal">One short email a month. No spam, just ideas worth your time.</p>
+      <form class="nl-form js-reveal" id="nlForm" novalidate>
+        <input type="email" id="nlEmail" placeholder="Enter your email" aria-label="Email address" required>
+        <button type="submit" class="btn btn-cream magnetic">Subscribe</button>
+      </form>
+      <p class="nl-ok" id="nlOk">&#127881; Thanks for subscribing!</p>
+      <p class="nl-note">Join 12,000+ readers. Unsubscribe anytime.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 8. CTA -->
+<section class="cta-band light" id="talk">
+  <div class="wrap">
+    <div class="cta-band-card js-reveal">
+      <div class="cta-band-copy">
+        <span class="eyebrow">Ready to try it?</span>
+        <h2>Put these ideas to work with Stackly</h2>
+        <p>Start a free trial and bring chat, video, docs and boards together for your team.</p>
+      </div>
+      <div class="cta-band-actions">
+        <a href="./signup.html" class="btn btn-cream magnetic">Start free trial</a>
+        <a href="./contact.html" class="btn btn-outline magnetic">Book a demo</a>
+        <span class="cta-note">No credit card &middot; Cancel anytime</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap footer-top">
+    <div class="footer-brand">
+      <a href="./404.html" class="logo footer-logo"><img src="../assets/stackly_logo.webp" alt="Stackly logo" class="logo-img logo-img-footer"></a>
+      <p>The remote collaboration platform for teams that work across cities, countries and time zones.</p>
+      <div class="footer-socials">
+        <a href="./404.html" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.1 1 2.48 1s2.5 1.12 2.5 2.5zM.24 8.25h4.48V23H.24V8.25zM8.13 8.25h4.3v2.01h.06c.6-1.13 2.06-2.32 4.24-2.32 4.53 0 5.37 2.98 5.37 6.86V23h-4.48v-6.42c0-1.53-.03-3.5-2.13-3.5-2.14 0-2.47 1.67-2.47 3.39V23H8.13V8.25z"/></svg></a>
+        <a href="./404.html" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.4 8.46L23.3 22h-6.86l-5.37-6.6L4.9 22H1.8l7.9-9.03L1 2h7.03l4.86 6.03L18.9 2zm-1.2 18h1.9L7.4 3.9H5.36L17.7 20z"/></svg></a>
+        <a href="./404.html" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.5s-.23-1.64-.94-2.36c-.9-.94-1.9-.95-2.36-1C16.9 3 12 3 12 3s-4.89 0-8.19.14c-.46.05-1.46.06-2.36 1C.73 4.86.5 6.5.5 6.5S.27 8.42.27 10.35v1.79c0 1.93.23 3.85.23 3.85s.23 1.64.94 2.36c.9.94 2.08.91 2.6 1.01 1.89.18 8.02.24 8.02.24s4.9-.01 8.2-.15c.46-.05 1.46-.06 2.36-1 .71-.72.94-2.36.94-2.36s.23-1.92.23-3.85v-1.79c0-1.93-.23-3.85-.23-3.85zM9.75 14.85V8.15L15.9 11.5l-6.15 3.35z"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4 class="footer-col-title">Navigate</h4>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./service.html">Services</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4 class="footer-col-title">Contact</h4>
+      <address class="footer-address"><span class="fi" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span><span>MMR Complex, Periyakollappatty<br>Chinna Thirupathi, Tamil Nadu<br>636008</span></address>
+      <div class="footer-hours">Mon&ndash;Fri &middot; 9am &ndash; 6pm IST</div>
+      <a href="./404.html" class="footer-line"><span class="fi" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span><span>+91 98765 43210</span></a>
+      <a href="./404.html" class="footer-line"><span class="fi" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></span><span>hello@stackly.ai</span></a>
+    </div>
+    <div class="footer-col">
+      <h4 class="footer-col-title">Newsletter</h4>
+      <p class="footer-newsletter-copy">Monthly tips on running great remote teams.</p>
+      <a href="./404.html" class="footer-newsletter-row"><span>Subscribe now</span></a>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>&copy; 2026 STACKLY. All rights reserved.</span>
+    <div class="footer-legal-links"><a href="./404.html">Privacy Policy</a><span>&middot;</span><a href="./404.html">Terms</a></div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="../js/blog.js"></script>
+</body>
+</html>
