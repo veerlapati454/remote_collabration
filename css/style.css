@@ -210,9 +210,10 @@ header.solid{position:fixed;background:var(--teal);box-shadow:0 6px 24px rgba(0,
 .qs{grid-area:1/1;margin:0;opacity:0;visibility:hidden;}
 .qs.active{opacity:1;visibility:visible;}
 .qs p{font-size:21px;line-height:1.6;margin:0 0 24px;}
-.qs .name{font-weight:600;}
-.qs .role{color:var(--teal-60);font-size:13px;margin-top:4px;}
-.q-dots{display:flex;gap:10px;margin-top:26px;}
+.qs-author{margin-top:4px;}
+.qs-author .name{font-weight:600;}
+.qs-author .role{color:var(--teal-60);font-size:13px;margin-top:4px;}
+.q-dots{display:flex;gap:10px;margin-top:26px;justify-content:center;}
 .q-dots button{width:10px;height:10px;border-radius:10px;border:none;background:var(--teal-15);cursor:pointer;padding:0;transition:width .3s,background .3s;}
 .q-dots button.on{width:34px;background:var(--teal);}
 

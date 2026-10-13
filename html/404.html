@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 — Page Not Found | Stackly</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+/* 404 PAGE: remote collaboration theme (teal + cream, matches the Stackly site) */
+:root{
+  --teal:#0f4c4a;--cream:#f6f1e7;
+  --cream-80:rgba(246,241,231,.82);--cream-60:rgba(246,241,231,.62);
+  --cream-15:rgba(246,241,231,.16);--cream-08:rgba(246,241,231,.07);
+}
+*{box-sizing:border-box;}
+html,body{margin:0;min-height:100%;overflow-x:hidden;max-width:100%;}
+body{font-family:'Inter',sans-serif;background:var(--teal);color:var(--cream);-webkit-font-smoothing:antialiased;text-align:center;}
+a{color:inherit;text-decoration:none;}
+:focus-visible{outline:2px solid var(--cream);outline-offset:3px;}
+
+.stage{position:relative;min-height:100vh;min-height:100dvh;display:flex;align-items:center;justify-content:center;overflow:hidden;padding:56px 20px;}
+.grid-plane{position:absolute;inset:0;z-index:0;pointer-events:none;
+  background:linear-gradient(var(--cream-08) 1px,transparent 1px) 0 0/48px 48px,linear-gradient(90deg,var(--cream-08) 1px,transparent 1px) 0 0/48px 48px;
+  -webkit-mask-image:radial-gradient(circle at 50% 45%,#000 0%,transparent 72%);mask-image:radial-gradient(circle at 50% 45%,#000 0%,transparent 72%);}
+.orb{position:absolute;border-radius:50%;background:radial-gradient(circle,var(--cream-15),transparent 68%);pointer-events:none;z-index:0;}
+.o1{width:520px;height:520px;top:-160px;left:-140px;animation:drift 12s ease-in-out infinite alternate;}
+.o2{width:600px;height:600px;bottom:-220px;right:-160px;animation:drift 15s ease-in-out infinite alternate-reverse;}
+@keyframes drift{to{transform:translate(50px,40px);}}
+#particles{position:absolute;inset:0;width:100%;height:100%;z-index:1;pointer-events:none;}
+.vignette{position:absolute;inset:0;z-index:2;pointer-events:none;background:radial-gradient(ellipse at center,transparent 55%,rgba(0,0,0,.28) 100%);}
+
+.content{position:relative;z-index:3;width:100%;max-width:720px;display:flex;flex-direction:column;align-items:center;}
+
+/* brand */
+.brand{display:inline-flex;margin-bottom:22px;}
+.brand-logo{height:64px;width:auto;}
+.brand-logo-text{display:none;align-items:center;gap:10px;font-family:'Poppins',sans-serif;font-size:26px;font-weight:700;}
+.brand-logo-text .mark{width:22px;height:22px;border-radius:7px;background:var(--cream);}
+
+/* team network scene */
+.net{position:relative;width:min(360px,88vw);aspect-ratio:360/200;margin-bottom:6px;}
+.net-lines{position:absolute;inset:0;width:100%;height:100%;overflow:visible;}
+.ln{stroke:var(--cream-60);stroke-width:1.2;vector-effect:non-scaling-stroke;opacity:.6;}
+.ln.broken{stroke-dasharray:5 7;opacity:.45;animation:flicker 2.6s steps(1) infinite;}
+.ln.broken.live{stroke-dasharray:none;opacity:.9;animation:none;}
+@keyframes flicker{0%,100%{opacity:.45}45%{opacity:.15}55%{opacity:.5}}
+.packet{fill:var(--cream);filter:drop-shadow(0 0 4px rgba(246,241,231,.9));}
+.spark{position:absolute;left:66.5%;top:65%;width:9px;height:9px;margin:-4.5px 0 0 -4.5px;border-radius:50%;background:var(--cream);box-shadow:0 0 12px 3px rgba(246,241,231,.55);animation:spark 1.6s ease-in-out infinite;}
+@keyframes spark{0%,100%{opacity:.15;transform:scale(.6)}50%{opacity:1;transform:scale(1.2)}}
+.node{position:absolute;width:44px;height:44px;margin:-22px 0 0 -22px;}
+.node i{width:100%;height:100%;border-radius:50%;display:flex;align-items:center;justify-content:center;font-style:normal;font-family:'Poppins',sans-serif;font-size:12px;font-weight:600;color:var(--teal);background:var(--cream);border:2px solid var(--teal);box-shadow:0 10px 24px rgba(0,0,0,.3);}
+.node.n2 i{background:#d3e0d9;}
+.node.n3 i{background:#a9c4bb;}
+.node.core{width:64px;height:64px;margin:-32px 0 0 -32px;left:50%;top:50%;}
+.node.core i{font-size:22px;background:rgba(15,76,74,.95);color:var(--cream);border:1px solid var(--cream-60);box-shadow:0 0 0 8px var(--cream-08),0 14px 30px rgba(0,0,0,.35);}
+.node.core::before{content:"";position:absolute;inset:-6px;border-radius:50%;border:1px solid var(--cream-60);animation:pulse 2.8s ease-out infinite;}
+@keyframes pulse{0%{transform:scale(.9);opacity:.7}100%{transform:scale(2);opacity:0}}
+.n1{left:13.9%;top:25%;}.n2{left:86.1%;top:25%;}.n3{left:16.7%;top:80%;}.missing{left:83.3%;top:80%;}
+.node.missing i{background:transparent;color:var(--cream-60);border:2px dashed var(--cream-60);box-shadow:none;}
+.node.missing em{position:absolute;left:50%;top:100%;transform:translateX(-50%);margin-top:6px;font-style:normal;font-size:10px;letter-spacing:1.6px;text-transform:uppercase;color:var(--cream-60);white-space:nowrap;}
+.node.missing.shake{animation:shake .5s;}
+@keyframes shake{0%,100%{transform:translateX(0)}20%{transform:translateX(-7px)}40%{transform:translateX(7px)}60%{transform:translateX(-5px)}80%{transform:translateX(5px)}}
+
+/* big 404 with glitch */
+.code-num{position:relative;font-family:'Poppins',sans-serif;font-weight:800;font-size:clamp(88px,17vw,180px);line-height:1;letter-spacing:-2px;margin:6px 0 8px;color:var(--cream);}
+.glitch-layer{position:absolute;inset:0;pointer-events:none;opacity:.7;}
+.glitch-layer.g1{color:var(--cream-60);animation:glitch1 3.4s infinite steps(1);}
+.glitch-layer.g2{color:var(--cream-80);animation:glitch2 3.4s infinite steps(1);}
+@keyframes glitch1{0%,88%,100%{transform:translate(0);clip-path:inset(0 0 0 0);opacity:0}90%{transform:translate(-6px,2px);clip-path:inset(18% 0 55% 0);opacity:.8}94%{transform:translate(5px,-2px);clip-path:inset(62% 0 8% 0);opacity:.8}97%{transform:translate(-3px,0);clip-path:inset(40% 0 38% 0);opacity:.8}}
+@keyframes glitch2{0%,89%,100%{transform:translate(0);clip-path:inset(0 0 0 0);opacity:0}91%{transform:translate(6px,-2px);clip-path:inset(50% 0 20% 0);opacity:.7}95%{transform:translate(-5px,2px);clip-path:inset(10% 0 70% 0);opacity:.7}98%{transform:translate(3px,0);clip-path:inset(75% 0 5% 0);opacity:.7}}
+
+/* status + copy */
+.status-line{display:inline-flex;align-items:center;gap:10px;padding:8px 18px;border:1px solid var(--cream-15);border-radius:40px;background:var(--cream-08);font-family:'Poppins',sans-serif;font-size:11.5px;font-weight:600;letter-spacing:2px;text-transform:uppercase;margin-bottom:22px;}
+.status-dot{width:8px;height:8px;border-radius:50%;background:var(--cream);animation:dot 1.6s ease-out infinite;}
+@keyframes dot{0%{box-shadow:0 0 0 0 rgba(246,241,231,.6)}100%{box-shadow:0 0 0 10px rgba(246,241,231,0)}}
+.headline{font-family:'Poppins',sans-serif;font-size:clamp(26px,4.4vw,42px);font-weight:600;line-height:1.2;margin:0 0 14px;}
+.subtext{font-size:16px;line-height:1.75;font-weight:300;color:var(--cream-80);max-width:540px;margin:0 0 26px;}
+.path{display:inline-block;max-width:100%;vertical-align:bottom;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding:1px 10px;border-radius:8px;background:var(--cream-15);font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.88em;color:var(--cream);}
+
+/* mini chat */
+.chat{width:min(400px,100%);margin:0 0 30px;background:var(--cream-08);border:1px solid var(--cream-15);border-radius:20px;padding:14px;text-align:left;}
+.chat-head{display:flex;align-items:center;gap:12px;padding-bottom:12px;border-bottom:1px solid var(--cream-15);margin-bottom:12px;}
+.chat-head .av{width:36px;height:36px;border-radius:50%;background:var(--cream);color:var(--teal);display:flex;align-items:center;justify-content:center;font-family:'Poppins',sans-serif;font-size:12px;font-weight:700;}
+.chat-head b{display:block;font-size:14px;font-weight:600;}
+.chat-head small{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--cream-60);}
+.live{width:7px;height:7px;border-radius:50%;background:var(--cream);}
+.chat-body{display:flex;flex-direction:column;gap:8px;min-height:130px;}
+.msg{align-self:flex-start;max-width:90%;padding:10px 14px;border-radius:16px 16px 16px 4px;background:var(--cream);color:var(--teal);font-size:14px;line-height:1.5;opacity:0;transform:translateY(10px);transition:opacity .35s,transform .35s;}
+.msg.show{opacity:1;transform:none;}
+.typing{align-self:flex-start;display:none;gap:5px;padding:12px 14px;border-radius:16px 16px 16px 4px;background:var(--cream-15);}
+.typing.on{display:inline-flex;}
+.typing span{width:6px;height:6px;border-radius:50%;background:var(--cream);animation:bounce 1s infinite;}
+.typing span:nth-child(2){animation-delay:.15s;}.typing span:nth-child(3){animation-delay:.3s;}
+@keyframes bounce{0%,60%,100%{transform:translateY(0);opacity:.5}30%{transform:translateY(-5px);opacity:1}}
+
+/* buttons */
+.actions{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-bottom:26px;}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 26px;border-radius:40px;font-family:'Inter',sans-serif;font-size:14px;font-weight:600;cursor:pointer;border:1px solid var(--cream-60);background:transparent;color:var(--cream);transition:transform .25s,background .25s,color .25s,box-shadow .3s;}
+.btn:hover{background:var(--cream-15);transform:translateY(-3px);}
+.btn:active{transform:scale(.97);}
+.btn-primary{background:var(--cream);color:var(--teal);border-color:var(--cream);}
+.btn-primary:hover{background:var(--cream);box-shadow:0 14px 30px rgba(0,0,0,.28);}
+.icon{width:18px;height:18px;flex:0 0 auto;}
+.btn.busy .icon{animation:spin 1s linear infinite;}
+@keyframes spin{to{transform:rotate(360deg);}}
+
+.links{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;align-items:center;margin-bottom:26px;font-size:13.5px;}
+.links span{color:var(--cream-60);margin-right:4px;}
+.links a{padding:8px 18px;border:1px solid var(--cream-15);border-radius:30px;background:var(--cream-08);transition:background .25s,color .25s,transform .25s;}
+.links a:hover{background:var(--cream);color:var(--teal);transform:translateY(-3px);}
+.hint{font-size:11.5px;letter-spacing:2px;text-transform:uppercase;color:var(--cream-60);}
+
+@media (max-width:600px){
+  .stage{padding:44px 18px;}
+  .brand-logo{height:54px;}
+  .actions{flex-direction:column;align-items:center;width:100%;}
+  .actions .btn{width:100%;max-width:300px;}
+  .subtext{font-size:15px;}
+  .hint{letter-spacing:1.2px;font-size:10.5px;}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none !important;transition:none !important;}
+  .msg{opacity:1;transform:none;}
+}
+
+</style>
+</head>
+<body>
+
+<div class="stage">
+  <div class="grid-plane" aria-hidden="true"></div>
+  <span class="orb o1" aria-hidden="true"></span>
+  <span class="orb o2" aria-hidden="true"></span>
+  <canvas id="particles" aria-hidden="true"></canvas>
+  <div class="vignette" aria-hidden="true"></div>
+
+  <main class="content">
+    <a href="../index.html" class="brand" aria-label="Stackly home">
+      <img src="../assets/stackly_logo.webp" alt="Stackly" class="brand-logo" id="logoImg">
+      <span class="brand-logo-text" id="logoFallback"><span class="mark"></span>Stackly</span>
+    </a>
+
+    <!-- Team network: one teammate has dropped offline -->
+    <div class="net" aria-hidden="true">
+      <svg class="net-lines" viewBox="0 0 360 200" preserveAspectRatio="none">
+        <line class="ln" x1="180" y1="100" x2="50"  y2="50"></line>
+        <line class="ln" x1="180" y1="100" x2="310" y2="50"></line>
+        <line class="ln" x1="180" y1="100" x2="60"  y2="160"></line>
+        <line class="ln broken" x1="180" y1="100" x2="300" y2="160"></line>
+        <g id="packets"></g>
+      </svg>
+      <span class="spark"></span>
+      <div class="node core"><i>S</i></div>
+      <div class="node n1"><i>PN</i></div>
+      <div class="node n2"><i>AM</i></div>
+      <div class="node n3"><i>ST</i></div>
+      <div class="node missing" id="missingNode"><i>?</i><em>offline</em></div>
+    </div>
+
+    <div class="code-num" aria-hidden="true">
+      404
+      <span class="glitch-layer g1">404</span>
+      <span class="glitch-layer g2">404</span>
+    </div>
+
+    <div class="status-line" role="status">
+      <span class="status-dot"></span>
+      <span id="statusText">Connection lost &mdash; page not found</span>
+    </div>
+
+    <h1 class="headline">Looks like this page left the call</h1>
+    <p class="subtext">
+      The route <span class="path" id="pathText">/requested-page</span> isn't connected to your workspace. It may have been moved, renamed, or never invited to the channel.
+    </p>
+
+    <!-- Mini chat -->
+    <div class="chat" aria-live="polite">
+      <div class="chat-head"><span class="av">SB</span><div><b>Stackly Bot</b><small><span class="live"></span>online</small></div></div>
+      <div class="chat-body" id="chatBody">
+        <div class="typing" id="typing"><span></span><span></span><span></span></div>
+      </div>
+    </div>
+
+    <div class="actions">
+      <button class="btn" id="backBtn" type="button">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
+        Go back
+      </button>
+      <button class="btn" id="retryBtn" type="button">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 3v6h-6"/></svg>
+        Reconnect
+      </button>
+      <a class="btn btn-primary" href="../index.html" id="homeBtn">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z"/></svg>
+        Back to home
+      </a>
+    </div>
+
+    <nav class="links" aria-label="Helpful links">
+      <span>Or jump to:</span>
+      <a href="./about.html">About</a>
+      <a href="./service.html">Services</a>
+      <a href="./blog.html">Blog</a>
+      <a href="./contact.html">Contact</a>
+    </nav>
+
+    <div class="hint">ERR_CODE 0x0404 &middot; TRACE ID <span id="traceId">&mdash;</span></div>
+  </main>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script>
+(function () {
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // ---------- requested path + trace id ----------
+  const pathEl = document.getElementById('pathText');
+  let p = '';
+  try { p = decodeURIComponent(location.pathname); } catch (e) { p = location.pathname; }
+  if (p && p !== '/' && !/404\.html$/i.test(p)) pathEl.textContent = p;
+  const trace = Array.from({ length: 8 }, () => Math.floor(Math.random() * 16).toString(16)).join('').toUpperCase();
+  document.getElementById('traceId').textContent = trace;
+
+  // ---------- logo fallback ----------
+  const logo = document.getElementById('logoImg');
+  const fallback = document.getElementById('logoFallback');
+  logo.addEventListener('error', () => { logo.style.display = 'none'; fallback.style.display = 'inline-flex'; });
+
+  // ---------- buttons ----------
+  document.getElementById('backBtn').addEventListener('click', () => {
+    if (document.referrer && history.length > 1) history.back(); else location.href = '../index.html';
+  });
+
+  // ---------- mini chat (typing bot) ----------
+  const body = document.getElementById('chatBody');
+  const typing = document.getElementById('typing');
+  const lines = [
+    'Hi! I checked every channel for that page.',
+    'Nothing here. It may have moved or been renamed.',
+    'Try the links below, or head back home.'
+  ];
+  function sendNext(i) {
+    if (i >= lines.length) { typing.classList.remove('on'); return; }
+    typing.classList.add('on');
+    body.appendChild(typing);
+    setTimeout(() => {
+      typing.classList.remove('on');
+      const m = document.createElement('div');
+      m.className = 'msg';
+      m.textContent = lines[i];
+      body.insertBefore(m, typing);
+      requestAnimationFrame(() => requestAnimationFrame(() => m.classList.add('show')));
+      setTimeout(() => sendNext(i + 1), 500);
+    }, reduced ? 0 : 900);
+  }
+  setTimeout(() => sendNext(0), reduced ? 0 : 1300);
+
+  // ---------- reconnect interaction ----------
+  const retry = document.getElementById('retryBtn');
+  const statusText = document.getElementById('statusText');
+  const missing = document.getElementById('missingNode');
+  const brokenLine = document.querySelector('.ln.broken');
+  let retrying = false;
+  retry.addEventListener('click', () => {
+    if (retrying) return;
+    retrying = true; retry.classList.add('busy');
+    let n = 0;
+    statusText.textContent = 'Reconnecting… 1/3';
+    brokenLine.classList.add('live');
+    const t = setInterval(() => {
+      n++;
+      if (n < 3) { statusText.textContent = 'Reconnecting… ' + (n + 1) + '/3'; return; }
+      clearInterval(t);
+      brokenLine.classList.remove('live');
+      statusText.textContent = 'Still offline — page not found';
+      missing.classList.remove('shake'); void missing.offsetWidth; missing.classList.add('shake');
+      retry.classList.remove('busy'); retrying = false;
+    }, 900);
+  });
+
+  // ---------- network packets (messages travelling to teammates) ----------
+  const svgNS = 'http://www.w3.org/2000/svg';
+  const packets = document.getElementById('packets');
+  function startPackets() {
+    if (!window.gsap || reduced) return;
+    document.querySelectorAll('.ln:not(.broken)').forEach((ln, i) => {
+      const c = document.createElementNS(svgNS, 'circle');
+      c.setAttribute('r', '3'); c.setAttribute('class', 'packet'); packets.appendChild(c);
+      const x1 = +ln.getAttribute('x1'), y1 = +ln.getAttribute('y1'), x2 = +ln.getAttribute('x2'), y2 = +ln.getAttribute('y2');
+      const o = { t: 0 };
+      gsap.to(o, { t: 1, duration: 1.6 + i * 0.3, ease: 'power1.inOut', repeat: -1, delay: 0.8 + i * 0.4, onUpdate: () => {
+        c.setAttribute('cx', x1 + (x2 - x1) * o.t); c.setAttribute('cy', y1 + (y2 - y1) * o.t);
+        c.style.opacity = Math.sin(Math.PI * o.t);
+      } });
+    });
+  }
+
+  // ---------- GSAP entrance + floating nodes ----------
+  if (window.gsap && !reduced) {
+    gsap.from('.brand, .net, .code-num, .status-line, .headline, .subtext, .chat, .actions .btn, .links, .hint', {
+      y: 30, opacity: 0, duration: 0.8, stagger: 0.08, ease: 'power3.out', clearProps: 'transform,opacity'
+    });
+    gsap.from('.net .node', { scale: 0, duration: 0.6, stagger: 0.1, ease: 'back.out(2)', delay: 0.4 });
+    gsap.from('.net .ln', { opacity: 0, duration: 0.8, stagger: 0.12, delay: 0.6 });
+    gsap.utils.toArray('.net .node:not(.core)').forEach((n, i) => {
+      gsap.to(n, { y: i % 2 ? 6 : -6, duration: 1.8 + i * 0.3, ease: 'sine.inOut', yoyo: true, repeat: -1, delay: 1.2 });
+    });
+    startPackets();
+  }
+
+  // ---------- particle network that connects to the cursor ----------
+  const cv = document.getElementById('particles');
+  const ctx = cv.getContext('2d');
+  let w = 0, h = 0, pts = [];
+  const mouse = { x: -999, y: -999 };
+  function resize() {
+    const dpr = Math.min(window.devicePixelRatio || 1, 2);
+    w = cv.clientWidth; h = cv.clientHeight;
+    cv.width = w * dpr; cv.height = h * dpr;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    const n = Math.round(Math.min(70, (w * h) / 16000));
+    pts = Array.from({ length: n }, () => ({ x: Math.random() * w, y: Math.random() * h, vx: (Math.random() - 0.5) * 0.35, vy: (Math.random() - 0.5) * 0.35, r: Math.random() * 1.4 + 0.8 }));
+  }
+  function draw() {
+    ctx.clearRect(0, 0, w, h);
+    for (let i = 0; i < pts.length; i++) {
+      const a = pts[i];
+      if (!reduced) {
+        a.x += a.vx; a.y += a.vy;
+        if (a.x < 0 || a.x > w) a.vx *= -1;
+        if (a.y < 0 || a.y > h) a.vy *= -1;
+      }
+      ctx.beginPath(); ctx.arc(a.x, a.y, a.r, 0, Math.PI * 2);
+      ctx.fillStyle = 'rgba(246,241,231,.65)'; ctx.fill();
+      for (let j = i + 1; j < pts.length; j++) {
+        const b = pts[j], d = Math.hypot(a.x - b.x, a.y - b.y);
+        if (d < 120) {
+          ctx.strokeStyle = 'rgba(246,241,231,' + (0.16 * (1 - d / 120)) + ')';
+          ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke();
+        }
+      }
+      const dm = Math.hypot(a.x - mouse.x, a.y - mouse.y);
+      if (dm < 150) {
+        ctx.strokeStyle = 'rgba(246,241,231,' + (0.45 * (1 - dm / 150)) + ')';
+        ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(mouse.x, mouse.y); ctx.stroke();
+      }
+    }
+    if (!reduced) requestAnimationFrame(draw);
+  }
+  window.addEventListener('resize', resize);
+  window.addEventListener('mousemove', (e) => { mouse.x = e.clientX; mouse.y = e.clientY; });
+  window.addEventListener('touchmove', (e) => { const t = e.touches[0]; mouse.x = t.clientX; mouse.y = t.clientY; }, { passive: true });
+  window.addEventListener('mouseleave', () => { mouse.x = mouse.y = -999; });
+  resize(); draw();
+})();
+
+</script>
+</body>
+</html>
